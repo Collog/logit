@@ -955,21 +955,21 @@ containing a value of this type.
         public static final int abs__title=0x7f04001b;
         public static final int abs__up=0x7f04000b;
         public static final int ascending=0x7f040038;
-        public static final int contactEmail=0x7f040036;
-        public static final int contactId=0x7f040033;
-        public static final int contactList=0x7f040032;
-        public static final int contactName=0x7f040034;
-        public static final int contactPhoneNumber=0x7f040035;
         public static final int descending=0x7f040039;
         public static final int disableHome=0x7f040009;
         public static final int edit_query=0x7f040026;
+        public static final int email=0x7f040035;
         public static final int homeAsUp=0x7f040006;
         public static final int listMode=0x7f040002;
         public static final int menu_delete=0x7f040037;
+        public static final int name=0x7f040033;
         public static final int normal=0x7f040001;
+        public static final int pager=0x7f040032;
+        public static final int phonenr=0x7f040034;
         public static final int showCustom=0x7f040008;
         public static final int showHome=0x7f040005;
         public static final int showTitle=0x7f040007;
+        public static final int star=0x7f040036;
         public static final int tabMode=0x7f040003;
         public static final int useLogo=0x7f040004;
         public static final int wrap_content=0x7f040000;
@@ -1050,8 +1050,7 @@ containing a value of this type.
         public static final int abs__shareactionprovider_share_with_application=0x7f090007;
         public static final int action_settings=0x7f09000e;
         public static final int app_name=0x7f09000d;
-        public static final int menu_delete=0x7f09000f;
-        public static final int title_activity_delete_contact=0x7f090010;
+        public static final int hello_world=0x7f09000f;
     }
     public static final class style {
         /** 

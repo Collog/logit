@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.anca.tabbedlist.ContactListAdapter" x="877" y="6">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.anca.tabbedlist.Contact"
+            endpointName="selectedContact" kind="Simple">
+            <Point x="908" y="100"/>
+        </Association>
+        <Association destinationClassName="com.anca.tabbedlist.Contact"
+            endpointName="contacts" kind="Simple"/>
+    </Class>
+    <Class name="com.anca.tabbedlist.ViewPagerAdapter" x="87" y="147">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.anca.tabbedlist.ContactsFragment" x="463" y="186">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.anca.tabbedlist.Contact"
+            endpointName="contactlist" kind="Simple"/>
+    </Class>
+    <Class name="com.anca.tabbedlist.AllContactsFragment" x="274" y="349">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.anca.tabbedlist.ContactsFragment"/>
+        <Communication destinationClassName="com.anca.tabbedlist.ContactManager"/>
+    </Class>
+    <Class name="com.anca.tabbedlist.Contact" x="506" y="10">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.anca.tabbedlist.ContactManager" x="141" y="33">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.anca.tabbedlist.Contact"
+            endpointName="contactlist" kind="Simple"/>
+        <Communication destinationClassName="com.anca.tabbedlist.Contact"/>
+    </Class>
+    <Class name="com.anca.tabbedlist.MainActivity" x="221" y="145">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.anca.tabbedlist.RecentContactsFragment" x="738" y="340">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.anca.tabbedlist.ContactsFragment"/>
+        <Communication destinationClassName="com.anca.tabbedlist.ContactManager"/>
+    </Class>
+    <Class name="com.anca.tabbedlist.FavoriteContactsFragment" x="469" y="402">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.anca.tabbedlist.ContactsFragment"/>
+        <Communication destinationClassName="com.anca.tabbedlist.ContactManager"/>
+    </Class>
+</ClassDiagram>
